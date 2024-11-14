@@ -5,45 +5,55 @@ import BoxWrapper from './components/box_wrapper';
 
 
 export default function Projects() {
-  // Dummy data for projects
   const projects = [
     {
-      name: 'Login site with argon2',
-      description: `Frontend + backend website that \n
-                    uses argon2 for verifying password`,
-      technologies: 'JavaScript, My-Sql, Express.js, html + css',
-      githubLink: 'https://github.com/Maksymilian21Wnuk/UWr-/tree/main/Projects/login_website',
+      "name": "Flight delay prediction",
+      "description": "Machine learning flight delay prediction project",
+      "technologies": "Python with: numpy, pandas, sklearn, matplotlib, seaborn, jupyter notebook",
+      "githubLink": "https://github.com/Maksymilian21Wnuk/Flight-Delay-Prediction-Project"
     },
     {
-      name: 'J-Flashcards',
-      description: 'Java swing based GUI app for learning languages with flashcards made for objective programming classes',
-      technologies: 'Java, Java Swing',
-      githubLink: 'https://github.com/Maksymilian21Wnuk/UWr-/tree/main/Projects/J-Flashcards',
+      "name": "React Projects for laboratories",
+      "description": "Projects made during 2023/2024 summer term in react.",
+      "technologies": "React with typescript, Material UI, SASS, tailwind.",
+      "githubLink": "https://github.com/Maksymilian21Wnuk/React-projects"
     },
     {
-      name: 'Embedded Systems Mini-Projects',
-      description: 'Avr microcontrollers programming controllers written in c language',
-      technologies: 'C, Atmega 328p microcontroller, AVR',
-      githubLink: 'https://github.com/Maksymilian21Wnuk/UWr-/tree/main/embedded_systems',
+      "name": "D-Bus Tutorial",
+      "description": "D-Bus programming examples in python with explanations for linux advanced seminar.",
+      "technologies": "Python, D-Bus mechanism, linux based OS",
+      "githubLink": "https://github.com/Maksymilian21Wnuk/D-Bus-Examples"
     },
     {
-      name: 'React Projects for laboratories',
-      description: 'Java swing based GUI app for learning languages with flashcards',
-      technologies: 'Java, Java Swing',
-      githubLink: 'https://github.com/Maksymilian21Wnuk/React-projects',
+      "name": "GraphVisual",
+      "description": "Interactive visualisation of graph algorithms with API for writing own algorithm visualisations.",
+      "technologies": "React, typescript, tailwind, daisy.ui, React Flow",
+      "githubLink": "https://github.com/Maksymilian21Wnuk/GraphVisual"
     },
     {
-      name: 'Traceroute',
-      description: 'Implementation of traceroute linux program in C for networking classes',
-      technologies: 'Pure C',
-      githubLink: 'https://github.com/Maksymilian21Wnuk/UWr-/tree/main/Projects/traceroute',
+      "name": "Login site with argon2",
+      "description": "Frontend + backend website that uses argon2 for verifying password",
+      "technologies": "JavaScript, My-Sql, Express.js, html + css",
+      "githubLink": "https://github.com/Maksymilian21Wnuk/UWr-/tree/main/Projects/login_website"
     },
     {
-    name: 'Flight delay prediction',
-    description: 'Machine learning flight delay prediction project',
-    technologies: 'Python with: numpy, pandas, sklearn, matplotlib, seaborn, jupyter notebook',
-    githubLink: 'https://github.com/Maksymilian21Wnuk/UWr-/tree/main/Projects/J-Flashcards',
-  }
+      "name": "Embedded Systems Mini-Projects",
+      "description": "Avr microcontrollers programming controllers written in c language",
+      "technologies": "C, Atmega 328p microcontroller, AVR",
+      "githubLink": "https://github.com/Maksymilian21Wnuk/UWr-/tree/main/embedded_systems"
+    },
+    {
+      "name": "J-Flashcards",
+      "description": "Java swing based GUI app for learning languages with flashcards made for objective programming classes",
+      "technologies": "Java, Java Swing",
+      "githubLink": "https://github.com/Maksymilian21Wnuk/UWr-/tree/main/Projects/J-Flashcards"
+    },
+    {
+      "name": "Traceroute",
+      "description": "Implementation of traceroute linux program in C for networking classes",
+      "technologies": "C",
+      "githubLink": "https://github.com/Maksymilian21Wnuk/UWr-/tree/main/Projects/traceroute"
+    }
 
   ];
 
