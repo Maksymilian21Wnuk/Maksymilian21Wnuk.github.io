@@ -14,10 +14,10 @@ export default function About() {
         <Box
           sx={{
             display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' }, // Column layout for xs, row for sm and above
+            flexDirection: { xs: 'column', sm: 'row' }, 
             justifyContent: { xs: 'center', sm: 'flex-end' },
             alignItems: { xs: 'center', sm: 'flex-start' },
-            gap: '20px', // Adjust the gap for better spacing between buttons
+            gap: '20px',
             '& .MuiButton-root': {
               width: '200px',
               height: '60px',

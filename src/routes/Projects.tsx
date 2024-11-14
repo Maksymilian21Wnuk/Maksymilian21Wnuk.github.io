@@ -64,8 +64,8 @@ export default function Projects() {
     sx={{
       display: 'flex',
       justifyContent: 'center',
-      maxWidth: { xs: '100%', md: '40%' }, // 100% for small screens, 40% for medium and above
-      margin: '0 auto', // Centers the content
+      maxWidth: { xs: '100%', md: '60%' },
+      margin: '0 auto', 
     }}
   >
     <Grid container spacing={2} columns={{ xs: 1, sm: 2, md: 2 }}>
@@ -85,13 +85,13 @@ export default function Projects() {
             }}
           >
             <div>
-              <Typography variant="h5" gutterBottom>
+              <Typography variant="h4" gutterBottom>
                 {project.name}
               </Typography>
-              <Typography variant="body1" gutterBottom>
+              <Typography variant="h5" gutterBottom>
                 {project.description}
               </Typography>
-              <Typography variant="body2" gutterBottom>
+              <Typography variant="h6" gutterBottom>
                 Technologies used: {project.technologies}
               </Typography>
             </div>
