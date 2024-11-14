@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 
 export default function Header(props: {title: string, variant?: string}) {
     return (
-    <Typography variant="h2" gutterBottom>
+    <Typography variant="h3" gutterBottom>
         <Box fontWeight="300" >
             {props.title}
         </Box>

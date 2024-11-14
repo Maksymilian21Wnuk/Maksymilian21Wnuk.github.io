@@ -7,7 +7,7 @@ import { Link, Outlet } from 'react-router-dom';
 
 const pages = [
   {name: 'Home',page: ''}, 
-  {name:'About', page:'About'}, 
+  {name:'About', page:'About/Me'}, 
   {name:'Projects', page:'Projects'},];
 
 function Nav() {

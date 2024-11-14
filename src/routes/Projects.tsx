@@ -1,4 +1,4 @@
-import { Box, Typography, Link, IconButton } from '@mui/material';
+import { Box, Typography, Link, IconButton, Grid } from '@mui/material';
 import Header from './components/header';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import BoxWrapper from './components/box_wrapper';
@@ -58,43 +58,53 @@ export default function Projects() {
   ];
 
   return (
-    <BoxWrapper>
-    <Header title="Projects" />
+<BoxWrapper>
+  <Header title="Projects" />
+  <Box
+    sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      maxWidth: { xs: '100%', md: '40%' }, // 100% for small screens, 40% for medium and above
+      margin: '0 auto', // Centers the content
+    }}
+  >
+    <Grid container spacing={2} columns={{ xs: 1, sm: 2, md: 2 }}>
       {projects.map((project) => (
-        <Box 
-          key={project.name} 
-          mb={3} 
-          p={2}
-          width={600}
-          bgcolor="primary.light"
-          sx={{ 
-            textAlign: 'left', 
-            border : 1, 
-            borderRadius: '16px',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between' // Align items in a column
-          }}
-        >
-          <div>
-            <Typography variant="h5" gutterBottom>
-              {project.name}
-            </Typography>
-            <Typography variant="body1" gutterBottom>
-              {project.description}
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-              Technologies used: {project.technologies}
-            </Typography>
-          </div>
-          <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
-            <IconButton>
-              <GitHubIcon />
-              Source code
-            </IconButton>
-          </Link>
-        </Box>
+        <Grid item xs={12} sm={6} md={12} key={project.name}>
+          <Box
+            mb={3}
+            p={2}
+            bgcolor="primary.light"
+            sx={{
+              textAlign: 'left',
+              border: 1,
+              borderRadius: '16px',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+            }}
+          >
+            <div>
+              <Typography variant="h5" gutterBottom>
+                {project.name}
+              </Typography>
+              <Typography variant="body1" gutterBottom>
+                {project.description}
+              </Typography>
+              <Typography variant="body2" gutterBottom>
+                Technologies used: {project.technologies}
+              </Typography>
+            </div>
+            <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
+              <IconButton>
+                <GitHubIcon />
+                Source code
+              </IconButton>
+            </Link>
+          </Box>
+        </Grid>
       ))}
-    </BoxWrapper>
-  );
+    </Grid>
+  </Box>
+</BoxWrapper>  );
 }

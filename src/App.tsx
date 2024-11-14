@@ -8,23 +8,31 @@ import Experience from './routes/about_routes/Experience'
 import Skills from './routes/about_routes/Skills'
 import "./app.css"
 import Education from './routes/about_routes/Education'
+import { Container } from '@mui/material';
 
 function App() {
 
   return (
     <div className='app'>
-      <Routes>
-        <Route path="/" element={<Nav />}>
-        <Route path="/" element={<Home />} />
-          <Route path="/Projects" element={<Projects />} />
+      <Container maxWidth={false}
+            sx={{
+              width: '100%',
+              margin: '0 auto', 
+              padding: '0 20px', 
+            }}>
+        <Routes>
+          <Route path="/" element={<Nav />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/Projects" element={<Projects />} />
             <Route path="/About" element={<About />}>
-            <Route path="/About/Me" element={<Me />} />
-            <Route path="/About/Education" element={<Education />} />
-            <Route path="/About/Experience" element={<Experience />} />
-            <Route path="/About/Skills" element={<Skills />} />
+              <Route path="/About/Me" element={<Me />} />
+              <Route path="/About/Education" element={<Education />} />
+              <Route path="/About/Experience" element={<Experience />} />
+              <Route path="/About/Skills" element={<Skills />} />
             </Route>
-        </Route>
+          </Route>
         </Routes>
+      </Container>
     </div>
   )
 }

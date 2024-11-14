@@ -16,8 +16,6 @@ function paragraph(data : Paragraph) {
         </Box>
     );
   }
-  
-
 
 
 export default function Me() {
@@ -33,7 +31,7 @@ export default function Me() {
             computer science, so I spend a lot of time learning new technologies and programming. Moreover, I like swimming and spending my time actively.`
         },
         {
-            title : "Things I like in programming",
+            title : "Programming",
             text: `I am fond of programming in low level languages like C and C++. I like to write code that is efficient and fast. I am also interested in operating systems and how they work. 
             I like to write code that interacts with hardware and is close to the system. However, I feel great in programming high
             level languages like Python and TypeScript. I like to write code that is easy to read and understand. I am also interested in web development and machine learning.`
@@ -50,15 +48,10 @@ export default function Me() {
         <>
         <BoxWrapper>
             <Header title="Me" variant="h3" />
-
         </BoxWrapper>
-        <Box mb={4} 
-            alignContent={"center"}       
-            textAlign="left" 
-            pl={50} 
-            pr={50}>
+        <BoxWrapper>
                 {data.map((item) => paragraph(item))}
-        </Box>
+        </BoxWrapper>
         </>
     );
 }

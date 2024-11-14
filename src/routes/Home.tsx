@@ -5,18 +5,18 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Header from './components/header';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-import * as React from 'react';
-import myImage from "../assets/me.png";
+import { useState } from 'react';
+import myImage from "../../public/profile_pic.jpg";
 import BoxWrapper from './components/box_wrapper';
 
 function Home() {
-  const [mail, setMail] = React.useState(false);
+  const [mail, setMail] = useState(false);
 
 
   return (
     <BoxWrapper>
     <Header variant='h3' title='Maksymilian Wnuk' />
-      <Typography variant="h3" paragraph>
+      <Typography variant="h4" paragraph>
         <Box fontWeight="300">
         Computer Science Student
         </Box>
