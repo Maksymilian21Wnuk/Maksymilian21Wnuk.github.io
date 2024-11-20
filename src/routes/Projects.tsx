@@ -13,6 +13,12 @@ export default function Projects() {
       "githubLink": "https://github.com/Maksymilian21Wnuk/Flight-Delay-Prediction-Project"
     },
     {
+      "name": "GraphVisual",
+      "description": "Interactive visualisation of graph algorithms with API for writing own algorithm visualisations.",
+      "technologies": "React, typescript, tailwind, daisy.ui, React Flow",
+      "githubLink": "https://github.com/Maksymilian21Wnuk/GraphVisual"
+    },
+    {
       "name": "React Projects for laboratories",
       "description": "Projects made during 2023/2024 summer term in react.",
       "technologies": "React with typescript, Material UI, SASS, tailwind.",
@@ -23,12 +29,6 @@ export default function Projects() {
       "description": "D-Bus programming examples in python with explanations for linux advanced seminar.",
       "technologies": "Python, D-Bus mechanism, linux based OS",
       "githubLink": "https://github.com/Maksymilian21Wnuk/D-Bus-Examples"
-    },
-    {
-      "name": "GraphVisual",
-      "description": "Interactive visualisation of graph algorithms with API for writing own algorithm visualisations.",
-      "technologies": "React, typescript, tailwind, daisy.ui, React Flow",
-      "githubLink": "https://github.com/Maksymilian21Wnuk/GraphVisual"
     },
     {
       "name": "Login site with argon2",
